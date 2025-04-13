@@ -1,4 +1,4 @@
-name: Deploy MkDocs Material site to Pages
+name: Deploy dev-docs to Pages
 
 on:
   push:
