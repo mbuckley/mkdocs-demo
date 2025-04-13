@@ -1,0 +1,63 @@
+# Project information
+site_name: Documentation
+site_url: https://mbuckley.github.io/mkdocs-demo
+docs_dir: "dev-docs"
+site_dir: "docs"
+
+# Repository
+repo_name: mbuckley/mkdocs-demo
+repo_url: https://github.com/mbuckley/mkdocs-demo
+edit_uri: edit/main/dev-docs/
+
+# Configuration
+theme:
+  name: material
+  features:
+    - content.action.edit
+    - content.code.copy
+    - content.code.select
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tracking
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - toc.follow
+  palette:
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+  font:
+    text: Roboto
+    code: Roboto Mono
+  icon:
+    logo: material/library
+    repo: fontawesome/brands/github
+
+# Additional configuration
+extra:
+  generator: false
+
+# Extensions
+markdown_extensions:
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
