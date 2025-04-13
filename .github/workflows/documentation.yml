@@ -2,7 +2,7 @@ name: Deploy dev-docs to Pages
 
 on:
   push:
-    branches: [$default-branch]
+    branches: [main]
     paths:
       - 'mkdocs.yml'
       - 'dev-docs/**'
